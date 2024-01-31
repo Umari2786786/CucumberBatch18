@@ -9,9 +9,12 @@ import org.junit.runner.RunWith;
 //cucumber options decide what to execute, where to execute
 @CucumberOptions(
         //features we use to provide the path of the feature file
-        features = "src/test/resources/Features/Login.feature",
+        features = "src/test/resources/Features",
         //glue below will link the above to the below
-        glue = "steps"
+        glue = "steps",
+        // dry run stops the actual execution when its TRUE - you have to change to FALSE then run the execution
+        dryRun = false,
+        tags ="@sprint2"
 
 
 )
