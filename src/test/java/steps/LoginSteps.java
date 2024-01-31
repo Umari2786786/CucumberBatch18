@@ -6,11 +6,14 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.CommonMethods;
 
 import java.time.Duration;
 
-public class LoginSteps {
-    public WebDriver driver;
+public class LoginSteps extends CommonMethods {
+
+    //we don't need the driver below as its coming from the utils>common methods
+    //public WebDriver driver;
 
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() {
