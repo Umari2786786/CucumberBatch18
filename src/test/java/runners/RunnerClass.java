@@ -14,7 +14,14 @@ import org.junit.runner.RunWith;
         glue = "steps",
         // dry run stops the actual execution when its TRUE - you have to change to FALSE then run the execution
         dryRun = false,
-        tags ="@sprint2"
+        //will only execute if both of the sprints exist or nothing!!
+        //tags="@sprint1 and @sprint4"
+        // will execute corresponding tests of which exist!!
+        //tags="@sprint1 or @sprint4"
+        tags ="@sprint1 or @sprint2",
+        //shows the results in better format and easier to understand the passed or failed tests!
+
+        plugin = {"pretty"}
 
 
 )
